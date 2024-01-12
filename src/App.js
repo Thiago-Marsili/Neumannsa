@@ -1,9 +1,9 @@
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
-import contacto from "./Pages/contacto"
-import empresa from "./Pages/empresa"
-import localizacion from "./Pages/localizacion"
-import productos from "./Pages/productos"
+import Contacto from "./Pages/contacto"
+import Empresa from "./Pages/empresa"
+import Localizacion from "./Pages/localizacion"
+import Productos from "./Pages/productos"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Empresa/>}/>
             <Route path="/productos" element={<Productos/>}/>
-            <Route path="/localizacion" element={<Localizacion>}/>
-            <Route path="/contacto" element={<Contacto>}/>
+            <Route path="/localizacion" element={<Localizacion/>}/>
+            <Route path="/contacto" element={<Contacto/>}/>
           </Routes>
           <Footer/>
         </BrowserRouter>
