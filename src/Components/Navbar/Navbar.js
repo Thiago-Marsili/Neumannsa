@@ -1,12 +1,11 @@
 import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure } from '@headlessui/react'
 
 const navigation = [
-  { name: 'Empresa', href: './Pages/empresa', current: true },
-  { name: 'Productos', href: './Pages/productos', current: false },
-  { name: 'Localizacion', href: './Pages/localizacion', current: false },
-  { name: 'Contacto', href: './Pages/contacto', current: false },
+  { name: 'Empresa', href: './', current: false },
+  { name: 'Productos', href: './productos', current: false },
+  { name: 'Localizacion', href: './localizacion', current: false },
+  { name: 'Contacto', href: './contacto', current: false },
 ]
 
 function classNames(...classes) {
@@ -22,10 +21,13 @@ export default function Example() {
             <div className="relative flex h-16 items-center justify-between">
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
+                <a href='./'>
                   <img
                     className="h-9 w-auto"
                     src='/assets/logo_sf.png'
+                    alt="Logo Neumann SA"
                   />
+                </a>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
