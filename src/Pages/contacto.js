@@ -56,32 +56,32 @@ const Contacto = () => {
           <div className="m-7">
             <form action="https://api.web3forms.com/submit" method="POST" onSubmit={handleSubmit}>
 
-              <input type="hidden" name="apikey" value="YOUR_ACCESS_KEY_HERE" />
-              <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+              <input type="hidden" name="apikey" value="5ccc769f-6c8b-493a-b238-39ea929c9ed8" />
+              <input type="hidden" name="subject" value="Consulta de la Web" />
               <input type="checkbox" name="botcheck" id="" style={{ display: 'none' }} />
 
               <div className="mb-6">
-                <label htmlFor="name" className="block mb-2 text-sm text-white-600 dark:text-gray-400">Nombre Completo</label>
+                <label htmlFor="Nombre" className="block mb-2 text-sm text-white-600 dark:text-gray-400">Nombre Completo</label>
                 <input type="text" name="name" id="name" placeholder="John Doe" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
               </div>
 
               <div className="mb-6">
-                <label htmlFor="email" className="block mb-2 text-sm text-white-600 dark:text-gray-400">Email</label>
+                <label htmlFor="Email" className="block mb-2 text-sm text-white-600 dark:text-gray-400">Email</label>
                 <input type="email" name="email" id="email" placeholder="tu@compania.com" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
               </div>
 
               <div className="mb-6">
-                <label htmlFor="phone" className="text-sm text-white-600 dark:text-gray-400">Número de Telefono</label>
+                <label htmlFor="Telefono" className="text-sm text-white-600 dark:text-gray-400">Número de Telefono</label>
                 <input type="text" name="phone" id="phone" placeholder="+11 5567-4343" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
               </div>
 
               <div className="mb-6">
-                <label htmlFor="message" className="block mb-2 text-sm text-white-600 dark:text-gray-400">Mensaje</label>
+                <label htmlFor="Mensaje" className="block mb-2 text-sm text-white-600 dark:text-gray-400">Mensaje</label>
                 <textarea rows="5" name="message" id="message" placeholder="Tu mensaje" className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
               </div>
 
               <div className="mb-6">
-                <button type="submit" className="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">Enviar Mensaje</button>
+                <button type="submit" className="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">Enviar</button>
               </div>
               <p className="text-base text-center text-gray-400">{resultMessage}</p>
             </form>
@@ -89,6 +89,7 @@ const Contacto = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
