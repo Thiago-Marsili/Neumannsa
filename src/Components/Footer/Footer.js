@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, json } from "react-router-dom";
 export default function Footer(){
     return(
             <footer className="text-gray-600 body-font">
