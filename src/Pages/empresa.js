@@ -15,7 +15,7 @@ const Empresa = () => {
 
         Neumann S.A. dispone de una red de 210 distribuidores en todo el mercado nacional y latinoamericano, con lo cual asegura su presencia y liderazgo en el mercado eléctrico.
       </p>
-      <img className="h-500 w-auto p-6" src='/assets/foto-frenteplanta.jpg' alt='Foto Frente Planta NeumannSA'/>
+      <img className="h-500 w-auto p-6 margin: 1em;" src='/assets/foto-frenteplanta.jpg' alt='Foto Frente Planta NeumannSA'/>
         <Carousel renderThumbs={() => {}}>
               <div>
                   <img src="/assets/foto_instagram_bsd_cd_130.jpg" className='h-96' alt='foto 1'/>
