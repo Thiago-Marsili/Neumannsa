@@ -2,9 +2,8 @@ import { Typography } from "@material-tailwind/react";
  
 export default function Footer() {
   return (
-    <footer className="w-full bg-white p-8">
-      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
-        <img src="/assets/logo_sf.png" alt="logo-ct" className="w-10" />
+    <footer className="w-full bg-blue-950 p-8">
+      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-blue-950 text-center md:justify-between">
         <div className="flex gap-4 text-blue-gray-900 sm:justify-center h-10">
             <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

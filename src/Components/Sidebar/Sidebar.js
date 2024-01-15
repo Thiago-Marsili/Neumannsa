@@ -12,8 +12,8 @@ import {
  
 export default function Sidebar() {
   return (
-    <div className="absolute bg-slate-800 p-2 pb-72">
-        <Card className="h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 bg-slate-800">
+    <div className="absolute bg-blue-950 p-2 pb-72">
+        <Card className="h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 bg-blue-950">
           <List className="text-white flex flex-col">
               <ListItem>
                 <ListItemPrefix>
