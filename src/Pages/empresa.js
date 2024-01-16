@@ -5,8 +5,8 @@ import { Carousel } from 'react-responsive-carousel';
 
 const Empresa = () => {
   return (
-    <div className="max-w-2xl mx-auto">
-      <p className="text-center p-6 text">
+    <div className="max-w-2xl mx-auto dark:bg-gray-900">
+      <p className="text-center p-6 text-white">
         Nuestra empresa opera hace más de 70 años, Neumann S.A. Es líder en la fabricación y comercialización de productos de automatización y control, disponiendo de la mayor variedad de modelos del mercado.
 
         La planta industrial está ubicada en Villa Ballester, Provincia de Buenos Aires, dispone de instalaciones normalizadas, tecnología y maquinarias adecuadas para fabricar sus series de artículos con calidad y confiabilidad de nivel internacional.
@@ -16,7 +16,7 @@ const Empresa = () => {
         Neumann S.A. dispone de una red de 210 distribuidores en todo el mercado nacional y latinoamericano, con lo cual asegura su presencia y liderazgo en el mercado eléctrico.
       </p>
       <img className="h-500 w-auto p-6 margin: 1em;" src='/assets/foto-frenteplanta.jpg' alt='Foto Frente Planta NeumannSA'/>
-        <Carousel renderThumbs={() => {}}>
+        <Carousel renderThumbs={() => {}} className='pb-12'>
               <div>
                   <img src="/assets/foto_instagram_bsd_cd_130.jpg" className='h-96' alt='foto 1'/>
             </div>

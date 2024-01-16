@@ -9,9 +9,9 @@ const Localizacion = () => {
       }}
     >
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Nuestra Ubicación</h1>
+        <h1 className="text-4xl font-bold mb-4">Nuestra Localización</h1>
         <p className="text-lg mb-6">
-          Estimado cliente, le mostramos la ubicación de nuestra empresa en el siguiente mapa.
+          Estimado cliente, le mostramos la localización de nuestra empresa en el siguiente mapa.
         </p>
 
         <a

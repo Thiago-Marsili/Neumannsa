@@ -8,7 +8,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App dark:bg-gray-900'>
         <BrowserRouter>
           <Navbar/>
           <Routes>
