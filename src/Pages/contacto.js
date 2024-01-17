@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-
 const Contacto = () => {
   const [resultMessage, setResultMessage] = useState('');
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     
@@ -16,7 +14,6 @@ const Contacto = () => {
     const json = JSON.stringify(object);
     
     setResultMessage("Porfavor espere...");
-
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -26,9 +23,7 @@ const Contacto = () => {
         },
         body: json,
       });
-
       const jsonResponse = await response.json();
-
       if (response.status === 200) {
         setResultMessage(jsonResponse.message);
       } else {
@@ -39,12 +34,10 @@ const Contacto = () => {
       console.error(error);
       setResultMessage("¡Algo salió mal!");
     }
-
     setTimeout(() => {
       setResultMessage(""); 
     }, 5000);
   };
-
   return (
     <div className="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto flex justify-center">
@@ -60,12 +53,12 @@ const Contacto = () => {
                 <input type="hidden" name="apikey" value="5ccc769f-6c8b-493a-b238-39ea929c9ed8" />
                 <input type="hidden" name="subject" value="Consulta de la Web" />
                 <input type="checkbox" name="botcheck" id="" style={{ display: 'none' }} />
-  
+
                 <div className="mb-6">
                   <label htmlFor="Nombre" className="block mb-2 text-sm text-white-600 dark:text-gray-400">Nombre y Apellido</label>
                   <input type="text" name="name" id="name" placeholder="John Doe" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
                 </div>
-  
+
                 <div className="mb-6">
                   <label htmlFor="Email" className="block mb-2 text-sm text-white-600 dark:text-gray-400">Email</label>
                   <input type="email" name="email" id="email" placeholder="tu@compania.com" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
@@ -112,6 +105,4 @@ const Contacto = () => {
   
   
 };
-
-
 export default Contacto;

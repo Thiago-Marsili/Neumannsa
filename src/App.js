@@ -5,7 +5,7 @@ import Empresa from "./Pages/empresa"
 import Localizacion from "./Pages/localizacion"
 import Productos from "./Pages/productos"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
