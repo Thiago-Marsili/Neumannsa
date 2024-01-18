@@ -12,6 +12,9 @@ const Empresa = () => {
       <div className="relative">
         <Carousel renderThumbs={() => {}} className='pb-12'>
               <div>
+                  <img src="/assets/foto-frenteplanta.jpg" className='h-96' alt='foto 1'/>
+              </div>
+              <div>
                   <img src="/assets/foto_instagram_bsd_cd_130.jpg" className='h-96' alt='foto 1'/>
             </div>
             <div>
@@ -29,12 +32,18 @@ const Empresa = () => {
         </Carousel>
       </div>
 
-      {/* Nueva sección sin fondo */}
       <div className="flex items-center bg-gray-900 p-8 rounded-lg shadow-lg mt-8">
         <div className="w-1/2 text-white">
           <h2 className="text-4xl font-semibold mb-4">Nosotros</h2>
           <p className="text-lg mb-6">
-            {/* ... (tu contenido) */}
+          Nuestra empresa opera hace más de 70 años, Neumann S.A. Es líder en la fabricación y comercialización de productos de automatización y control, disponiendo de la mayor variedad de modelos del mercado.  	
+
+La planta industrial está ubicada en Villa Ballester, Provincia de Buenos Aires, dispone de instalaciones normalizadas, tecnología y maquinarias adecuadas para fabricar sus series de artículos con calidad y confiabilidad de nivel internacional.
+
+Se destaca también por su sistema de gestión para brindar una gran agilidad en la respuesta a sus clientes y asegurar los tiempos de entrega que le sean requeridos.
+
+Neumann S.A. dispone de una red de 210 distribuidores en todo el mercado nacional
+y latinoamericano, con lo cual asegura su presencia y liderazgo en el mercado eléctrico. 
           </p>
           <div className="flex items-center">
             <FaMapMarkerAlt className="text-2xl mr-2" />

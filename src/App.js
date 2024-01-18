@@ -1,5 +1,6 @@
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
+import Sidebar from "./Components/Sidebar/Sidebar";
 import Contacto from "./Pages/contacto"
 import Empresa from "./Pages/empresa"
 import Localizacion from "./Pages/localizacion"
@@ -12,6 +13,7 @@ function App() {
     <div className='App dark:bg-gray-900'>
         <BrowserRouter>
           <Navbar/>
+          <Sidebar/>
           <Routes>
             <Route path="/" element={<Empresa/>}/>
             <Route path="/productos" element={<Productos/>}/>
