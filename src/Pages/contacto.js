@@ -3,7 +3,6 @@ const Contacto = () => {
   const [resultMessage, setResultMessage] = useState('');
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
     const formData = new FormData(e.target);
     const object = {};
     
@@ -101,7 +100,6 @@ const Contacto = () => {
       </div>
     </div>
   );
-  
   
 };
 export default Contacto;

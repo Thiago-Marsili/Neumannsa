@@ -1,7 +1,6 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import './navbar.css'; 
-import { FaYoutube } from 'react-icons/fa';
 
 const navigation = [
   { name: 'Empresa', href: './', current: false },
