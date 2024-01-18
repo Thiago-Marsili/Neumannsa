@@ -37,7 +37,6 @@ const Localizacion = () => {
           >
             Google Maps
           </a>
-          .
         </p>
       </div>
     </div>
