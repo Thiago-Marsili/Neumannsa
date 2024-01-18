@@ -7,46 +7,47 @@ const Empresa = () => {
   const windowHeight = window.innerHeight;
 
   return (
-    <div className="max-w-3xl mx-auto dark:bg-gray-900 overflow-hidden">
+    <div className="max-w-3xl mx-auto dark:bg-gray-900 overflow-hidden px-8 py-4">
       {/* Carousel */}
-      <Carousel
-        showThumbs={false}
-        showStatus={false}
-        infiniteLoop
-        autoPlay
-        interval={5000}
-        transitionTime={500}
-        emulateTouch
-        className='carousel-wrapper p-4 mb-8 rounded-lg shadow-lg'
-        style={{ height: windowHeight - 100, maxWidth: 'calc(100% + 8rem)', marginLeft: '-4rem', marginRight: '-4rem', marginTop: '-2rem' }}
-      >
-        
-        <div>
-          <img src="/assets/foto-frenteplanta.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 1' />
-        </div>
-        <div>
-          <img src="/assets/foto_instagram_bsd_cd_130.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 1' />
-        </div>
-        <div>
-          <img src="/assets/foto_instagram_control_de_nivel.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 2' />
-        </div>
-        <div>
-          <img src="/assets/foto_instagram_dpr2.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 3' />
-        </div>
-        <div>
-          <img src="/assets/foto_instagram_fkp7041.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 4' />
-        </div>
-        <div>
-          <img src="/assets/foto_instagram_hn610.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 5' />
-        </div>
-      </Carousel>
+      <div className="relative">
+        <Carousel
+          showThumbs={false}
+          showStatus={false}
+          infiniteLoop
+          autoPlay
+          interval={5000}
+          transitionTime={500}
+          emulateTouch
+          style={{ height: windowHeight - 100, maxWidth: '100%', borderRadius: '8px', overflow: 'hidden' }}
+        >
+          <div>
+            <img src="/assets/foto-frenteplanta.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 1' />
+          </div>
+          <div>
+            <img src="/assets/foto_instagram_FK_1070_1080.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 1' />
+          </div>
+          <div>
+            <img src="/assets/foto_instagram_dpr2.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 1' />
+          </div>
+          <div>
+            <img src="/assets/foto_instagram_fkp7041.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 1' />
+          </div>
+          <div>
+            <img src="/assets/foto_instagram_hn610.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 1' />
+          </div>
+          <div>
+            <img src="/assets/foto_instagram_control_de_nivel.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 1' />
+          </div>
+          {/* ... (resto de tus imágenes) */}
+        </Carousel>
+      </div>
 
       {/* Nueva sección sin fondo */}
       <div className="flex items-center bg-gray-900 p-8 rounded-lg shadow-lg mt-8">
         <div className="w-1/2 text-white">
           <h2 className="text-4xl font-semibold mb-4">Nosotros</h2>
           <p className="text-lg mb-6">
-            Nuestra empresa opera hace más de 70 años, Neumann S.A. Es líder en la fabricación y comercialización de productos de automatización y control, disponiendo de la mayor variedad de modelos del mercado. La planta industrial está ubicada en Villa Ballester, Provincia de Buenos Aires, dispone de instalaciones normalizadas, tecnología y maquinarias adecuadas para fabricar sus series de artículos con calidad y confiabilidad de nivel internacional. Se destaca también por su sistema de gestión para brindar una gran agilidad en la respuesta a sus clientes y asegurar los tiempos de entrega que le sean requeridos. Neumann S.A. dispone de una red de 210 distribuidores en todo el mercado nacional y latinoamericano, con lo cual asegura su presencia y liderazgo en el mercado eléctrico.
+            {/* ... (tu contenido) */}
           </p>
           <div className="flex items-center">
             <FaMapMarkerAlt className="text-2xl mr-2" />

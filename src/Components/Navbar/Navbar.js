@@ -1,6 +1,7 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import './navbar.css'; // Asegúrate de importar el archivo CSS aquí
+import { FaYoutube } from 'react-icons/fa';
 
 const navigation = [
   { name: 'Empresa', href: './', current: false },
@@ -75,4 +76,5 @@ export default function Navbar() {
       )}
     </Disclosure>
   );
+  
 }
