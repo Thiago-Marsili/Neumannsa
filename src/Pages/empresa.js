@@ -10,35 +10,22 @@ const Empresa = () => {
     <div className="max-w-3xl mx-auto dark:bg-gray-900 overflow-hidden px-8 py-4">
       {/* Carousel */}
       <div className="relative">
-        <Carousel
-          showThumbs={false}
-          showStatus={false}
-          infiniteLoop
-          autoPlay
-          interval={5000}
-          transitionTime={500}
-          emulateTouch
-          style={{ height: windowHeight - 100, maxWidth: '100%', borderRadius: '8px', overflow: 'hidden' }}
-        >
-          <div>
-            <img src="/assets/foto-frenteplanta.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 1' />
-          </div>
-          <div>
-            <img src="/assets/foto_instagram_FK_1070_1080.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 1' />
-          </div>
-          <div>
-            <img src="/assets/foto_instagram_dpr2.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 1' />
-          </div>
-          <div>
-            <img src="/assets/foto_instagram_fkp7041.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 1' />
-          </div>
-          <div>
-            <img src="/assets/foto_instagram_hn610.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 1' />
-          </div>
-          <div>
-            <img src="/assets/foto_instagram_control_de_nivel.jpg" style={{ objectFit: 'contain', width: '100%', height: '100%' }} alt='foto 1' />
-          </div>
-          {/* ... (resto de tus imágenes) */}
+        <Carousel renderThumbs={() => {}} className='pb-12'>
+              <div>
+                  <img src="/assets/foto_instagram_bsd_cd_130.jpg" className='h-96' alt='foto 1'/>
+            </div>
+            <div>
+                <img src="/assets/foto_instagram_control_de_nivel.jpg" className='h-96' alt='foto 2'/>
+            </div>
+            <div>
+                <img src="/assets/foto_instagram_dpr2.jpg" alt='foto 3' className='h-96'/>
+            </div>
+            <div>
+                <img src="/assets/foto_instagram_fkp7041.jpg" alt='foto 4' className='h-96'/>
+            </div>
+            <div>
+                <img src="/assets/foto_instagram_hn610.jpg" alt='foto 5' className='h-96'/>
+            </div>
         </Carousel>
       </div>
 
