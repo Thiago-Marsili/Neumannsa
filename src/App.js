@@ -5,6 +5,7 @@ import Contacto from "./Pages/contacto"
 import Empresa from "./Pages/empresa"
 import Localizacion from "./Pages/localizacion"
 import Productos from "./Pages/productos"
+import AgentesOficiales from "./Pages/agentesoficiales"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Empresa/>}/>
             <Route path="/productos" element={<Productos/>}/>
             <Route path="/localizacion" element={<Localizacion/>}/>
+            <Route path="/agentesoficiales" element={<AgentesOficiales/>}/>
             <Route path="/contacto" element={<Contacto/>}/>
           </Routes>
           <Footer/>

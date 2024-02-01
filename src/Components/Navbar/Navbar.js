@@ -6,6 +6,7 @@ const navigation = [
   { name: 'Empresa', href: './', current: false },
   { name: 'Productos', href: './Catalogo2024.pdf', current: false },
   { name: 'Localizacion', href: './localizacion', current: false },
+  { name: 'Agentes oficiales', href: './agentesoficiales', current: false },
   { name: 'Contacto', href: './contacto', current: false },
 ];
 
